@@ -3,10 +3,11 @@
 matplotlib を日本語表示に対応させる
 
 ## 利用方法
-本モジュールを `import` するだけ
 ```python
 import matplotlib.pyplot as plt
-import japanize_matplotlib
+from japanize_matplotlib import japanize
+
+japanize()
 
 plt.plot([1, 2, 3, 4])
 plt.xlabel('簡単なグラフ')
@@ -18,11 +19,7 @@ plt.show()
 
 ## インストール
 ```sh
-# pipenvで
-pipenv install japanize-matplotlib
-
-# またはpipで
-pip install japanize-matplotlib
+pip install git+https://github.com/Hiroshiba/japanize-matplotlib
 ```
 
 ## 利用フォント
